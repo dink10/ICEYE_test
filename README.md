@@ -88,3 +88,7 @@ MAX_CONN: 1024
 HANDSHAKE_TIMEOUT: 0
 LOG_LEVEL: info
 ```
+
+## Testing
+
+Before starting client tests, please, start Larvis client (simple solution)
