@@ -80,7 +80,7 @@ Commands:
 
 Client configuration (for simplicity each param hase default value):
 ```
-HTTP_ADDRESS: envDefault:"http://localhost:8080/test
+HTTP_ADDRESS: http://localhost:8080/test
 SERVER_LOG_REQUESTS: true
 SERVER_LOG_REQUEST_BODY: true
 CLIENT_TIMEOUT: 10
