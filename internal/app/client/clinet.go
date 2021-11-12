@@ -28,7 +28,7 @@ func Run() error {
 	}
 
 	c := client.NewClient(&cfg.Client)
-	res, err := c.DoRequest(cfg.Client.HttpAddress, http.MethodGet, client.Options{})
+	res, err := c.DoRequest(cfg.Client.HTTPAddress, http.MethodGet, client.Options{})
 	if err != nil {
 		return err
 	}

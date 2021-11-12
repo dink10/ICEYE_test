@@ -61,6 +61,7 @@ func NewClient(cfg *Config) *Client {
 	return &Client{&http.Client{Transport: &tr, Timeout: time.Duration(cfg.ClientTimeOut) * time.Second}}
 }
 
+// Options extra params for HTTP client
 type Options struct {
 	Headers map[string]string
 	Params  map[string]string
@@ -68,7 +69,6 @@ type Options struct {
 }
 
 // DoRequest - do request
-// nolint: gocyclo
 func (c Client) DoRequest(url, method string, opts Options) ([]byte, error) {
 
 	if url == "" {
