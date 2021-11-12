@@ -56,7 +56,7 @@ to start application.
 2. Run minikube `minikube start`
 3. Set the environment variable with eval command `eval $(minikube docker-env) # unix shells`
 4. Build the docker image with the Minikube’s Docker daemon `make build`
-4. Install kubectl if needs
+4. Install kubectl if needed
 5. Create namespace dev `kubectl create namespace dev` or apply namespace.yaml `kubectl apply -f deployments/k8s/namespace.yaml`
 6. Apply service `kubectl apply -f deployments/k8s/larvis.yaml`
 7. Check if everything is OK `kubectl -n dev get pods`
